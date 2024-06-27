@@ -1,6 +1,7 @@
 import  React,{ useState, useEffect } from 'react';
 import { GetProduct } from '../utils';
-import './index.css'
+import './index.css';
+import TopCategories from './TopCategories';
 
 export const ProductList = () => {
   const [products, setProducts] = useState([]);
@@ -24,16 +25,20 @@ export const ProductList = () => {
   if (error) return <div>Error:{error}</div>
 return (
 
-  <div className='product-list'>
-    <div >
+  <div >
+    {/* <TopCategories/> */}
+    <div>
     <h1 className='h1'>Products</h1>
-    <ul>
+    <ul className='product-list'>
       {products.map(product => (
+        
         <div key={product.id}>
-           <img src={product.image} alt={product.title} style={{width: '200px'}} />
+          <div className='each-product'>
+          <img src={product.image} alt={product.title}  className='products-image' />
           <h2>{product.title}</h2>
-          <p>{product.description}</p>
+          <p>{product.category}</p>
           <p>{product.price}</p>
+          </div>
         </div>
       ))}
 

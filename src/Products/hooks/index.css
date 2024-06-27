@@ -1,7 +1,20 @@
-.product-list li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.product-list {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5%;
+    margin-left: -3%;
 }
+.each-product{
+    width: 100%;
+    border: 2px solid red;
+    height: 500px;
+}
+.products-image{
+    width: 200px;
+}
+
+
+
+
+
   

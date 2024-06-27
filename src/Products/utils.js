@@ -9,4 +9,11 @@ export const GetProduct = async () => {
   }
 };
 
-
+export const GetTopCategories = async () => {
+  try {
+    const response = await fetch(`${baseUrl}/top-categories`);
+    return response.json();
+  } catch (error) {
+    throw new Error(error.message);
+  }
+};
