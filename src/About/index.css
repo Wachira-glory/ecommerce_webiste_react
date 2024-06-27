@@ -1,0 +1,49 @@
+.links{
+    display: flex;
+    gap: 38px;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+.alinks{
+    color: gray;
+}
+.logo-name{
+    font-size: 155%;
+    font-weight: 400;
+}
+.navbar{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.socials{
+    display: flex;
+    gap: 40px;
+}
+.landing-header{
+    line-height: 156%;
+    font-weight: 400;
+}
+.shopnowBtn{
+    border: 1px solid gray;
+   padding: 20px 39px;
+   background-color: white;
+}
+body{
+    margin-left: 19%;
+
+}
+.landing-text{
+    font-size: large;
+    line-height: 179%;
+}
+.landing-couch{
+
+}
+.landing-section{
+    display: flex;
+    gap: 80px;
+}
+.landing-couch{
+    width: 50%;
+}
